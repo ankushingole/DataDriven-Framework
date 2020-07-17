@@ -12,7 +12,7 @@ public class LoginPageTest extends BaseClass {
 
 	@Test(priority = 1)
 	public void loginApp() {
-		logger = report.createTest("Login to Demosite");
+		logger = report.createTest("Login to Demosite");    //using TestNG logger
 
 		loginPage = PageFactory.initElements(driver, LoginPage.class);
 		logger.info("Starting application");

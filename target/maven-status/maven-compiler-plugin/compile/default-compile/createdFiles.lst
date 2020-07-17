@@ -1,0 +1,7 @@
+Utilities\ExcelDataProvider.class
+base\BaseClass.class
+Utilities\BrowserFactory.class
+pages\LoginPage.class
+excelLib\Xls_Reader.class
+actions\Actions.class
+Utilities\ConfigDataProvider.class

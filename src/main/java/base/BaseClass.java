@@ -10,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -32,23 +33,25 @@ public class BaseClass {
 	@BeforeSuite
 	public void setUPExcel() {
 		Reporter.log("All Settings are getting ready", true);
-		
+
 		excel = new ExcelDataProvider();
 		config = new ConfigDataProvider();
 
 		ExtentHtmlReporter reporter = new ExtentHtmlReporter(new File("./Reports/Demosite.html"));
 		report = new ExtentReports();
 		report.attachReporter(reporter);
-		
+
 		Reporter.log("Settings done and Tests can be running", true);
 	}
-
+@Parameters({"browser", "urlToBeTested"})
 	@BeforeClass
-	public void setUp() {
-		
+	public void setUp(String browser, String url) {
+
 		Reporter.log("Trying to start browser", true);
 
-		driver = BrowserFactory.startApp(driver, config.getBrowser(), config.getQaURL());
+		//driver = BrowserFactory.startApp(driver, config.getBrowser(), config.getQaURL());
+		driver = BrowserFactory.startApp(driver, browser, url);
+		
 		Reporter.log("Browser and Appliction is up and running", true);
 	}
 
@@ -60,9 +63,9 @@ public class BaseClass {
 
 	@AfterMethod
 	public void getFailedTestSS(ITestResult result) throws IOException {
-		
+
 		Reporter.log("Test is about to End", true);
-		
+
 		if (result.getStatus() == ITestResult.FAILURE) {
 
 			// Actions.getScreenshot(driver);

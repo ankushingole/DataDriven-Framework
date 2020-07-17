@@ -17,15 +17,15 @@
       <![CDATA[Test is about to End]]>
     </line>
     <line>
-      <![CDATA[Test Comoleted and Reports generated]]>
+      <![CDATA[Test Completed and Reports generated]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="12132" started-at="2020-07-16T12:15:52Z" finished-at="2020-07-16T12:16:04Z">
+  <suite name="Default suite" duration-ms="14408" started-at="2020-07-17T10:32:37Z" finished-at="2020-07-17T10:32:51Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12132" started-at="2020-07-16T12:15:52Z" finished-at="2020-07-16T12:16:04Z">
+    <test name="Default test" duration-ms="14408" started-at="2020-07-17T10:32:37Z" finished-at="2020-07-17T10:32:51Z">
       <class name="Tests.LoginPageTest">
-        <test-method status="PASS" signature="setUPExcel()[pri:0, instance:Tests.LoginPageTest@5ba23b66]" name="setUPExcel" is-config="true" duration-ms="933" started-at="2020-07-16T17:45:51Z" finished-at="2020-07-16T17:45:52Z">
+        <test-method status="PASS" signature="setUPExcel()[pri:0, instance:Tests.LoginPageTest@5ba23b66]" name="setUPExcel" is-config="true" duration-ms="961" started-at="2020-07-17T16:02:36Z" finished-at="2020-07-17T16:02:37Z">
           <reporter-output>
             <line>
               <![CDATA[All Settings are getting ready]]>
@@ -35,7 +35,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUPExcel -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.LoginPageTest@5ba23b66]" name="setUp" is-config="true" duration-ms="8675" started-at="2020-07-16T17:45:52Z" finished-at="2020-07-16T17:46:01Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.LoginPageTest@5ba23b66]" name="setUp" is-config="true" duration-ms="11023" started-at="2020-07-17T16:02:37Z" finished-at="2020-07-17T16:02:48Z">
           <reporter-output>
             <line>
               <![CDATA[Trying to start browser]]>
@@ -45,11 +45,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginApp()[pri:1, instance:Tests.LoginPageTest@5ba23b66]" name="loginApp" duration-ms="1781" started-at="2020-07-16T17:46:01Z" finished-at="2020-07-16T17:46:03Z">
+        <test-method status="PASS" signature="loginApp()[pri:1, instance:Tests.LoginPageTest@5ba23b66]" name="loginApp" duration-ms="1800" started-at="2020-07-17T16:02:48Z" finished-at="2020-07-17T16:02:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method status="PASS" signature="getFailedTestSS(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@5ba23b66]" name="getFailedTestSS" is-config="true" duration-ms="880" started-at="2020-07-16T17:46:03Z" finished-at="2020-07-16T17:46:04Z">
+        <test-method status="PASS" signature="getFailedTestSS(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@5ba23b66]" name="getFailedTestSS" is-config="true" duration-ms="764" started-at="2020-07-17T16:02:50Z" finished-at="2020-07-17T16:02:50Z">
           <params>
             <param index="0">
               <value>
@@ -62,15 +62,15 @@
               <![CDATA[Test is about to End]]>
             </line>
             <line>
-              <![CDATA[Test Comoleted and Reports generated]]>
+              <![CDATA[Test Completed and Reports generated]]>
             </line>
           </reporter-output>
         </test-method> <!-- getFailedTestSS -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Tests.LoginPageTest@5ba23b66]" name="closeBrowser" is-config="true" duration-ms="784" started-at="2020-07-16T17:46:04Z" finished-at="2020-07-16T17:46:04Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Tests.LoginPageTest@5ba23b66]" name="closeBrowser" is-config="true" duration-ms="799" started-at="2020-07-17T16:02:50Z" finished-at="2020-07-17T16:02:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- Tests.LoginPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

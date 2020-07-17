@@ -13,13 +13,13 @@ public class LoginPage {
 		this.driver = ldriver;
 	}
 
-	@FindBy(xpath = "//input[@id='user_login']")
+	@FindBy(xpath = "//input[@id='txtUsername']")
 	WebElement username;
 
-	@FindBy(xpath = "//input[@id='user_pass']")
+	@FindBy(xpath = "//input[@id='txtPassword']")
 	WebElement password;
 
-	@FindBy(xpath = "//input[@id='wp-submit']")
+	@FindBy(xpath = "//input[@id='btnLogin']")
 	WebElement signinBtn;
 
 	public void logintoDemosite(String uname, String pass) {
