@@ -1,4 +1,4 @@
-package Tests;
+package general_tests;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 
 import base.BaseClass;
 
-public class TC_01_MultipleTestDataLogin extends BaseClass {
+public class TC_02_LoginWithExcel extends BaseClass {
 
-	@Test(dataProvider = "TestData")
+	@Test(dataProvider = "TestData1")
 	public void loginToApp(String uname, String pass) {
 
 		driver.get("https://opensource-demo.orangehrmlive.com/");
@@ -19,24 +19,13 @@ public class TC_01_MultipleTestDataLogin extends BaseClass {
 
 		Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"));
 		System.out.println("User is able to Login to App-- Test Case is Passed");
-
 	}
 
-	@DataProvider(name = "TestData")
+	@DataProvider(name = "TestData1")
 	public Object[][] passData() {
 
-		Object[][] data = new Object[3][2];
-		data[0][0] = "Admin";
-		data[0][1] = "admin123";
+		return new Object[][] {
 
-		data[1][0] = "Admin";
-		data[1][1] = "adin2ieh";
-
-		data[2][0] = "asdf";
-		data[2][1] = "sjdfsj";
-
-		return data;
-
+				{ "admin", "admin" }, { "akola", "akola" }, { "admin", "admin123" } };
 	}
-
 }

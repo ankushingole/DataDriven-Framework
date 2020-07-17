@@ -1,4 +1,4 @@
-package Tests;
+package general_tests;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import excelLib.Xls_Reader;
 
-public class TC_03_WebTableHandling {
+public class TC_04_WebTableHandling {
 
 	WebDriver driver;
 

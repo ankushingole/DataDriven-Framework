@@ -1,17 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[All Settings are getting ready]]>
+    </line>
+    <line>
+      <![CDATA[Settings done and Tests can be running]]>
+    </line>
+    <line>
+      <![CDATA[Trying to start browser]]>
+    </line>
+    <line>
+      <![CDATA[Browser and Appliction is up and running]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to End]]>
+    </line>
+    <line>
+      <![CDATA[Test Comoleted and Reports generated]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21611" started-at="2020-07-10T15:00:13Z" finished-at="2020-07-10T15:00:34Z">
+  <suite name="Suite" duration-ms="12132" started-at="2020-07-16T12:15:52Z" finished-at="2020-07-16T12:16:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21611" started-at="2020-07-10T15:00:13Z" finished-at="2020-07-10T15:00:34Z">
-      <class name="Tests.TC_03_WebTableHandling">
-        <test-method status="PASS" signature="readWebtableData()[pri:0, instance:Tests.TC_03_WebTableHandling@649d209a]" name="readWebtableData" duration-ms="21561" started-at="2020-07-10T20:30:13Z" finished-at="2020-07-10T20:30:34Z">
+    <test name="Test" duration-ms="12132" started-at="2020-07-16T12:15:52Z" finished-at="2020-07-16T12:16:04Z">
+      <class name="Tests.LoginPageTest">
+        <test-method status="PASS" signature="setUPExcel()[pri:0, instance:Tests.LoginPageTest@5ba23b66]" name="setUPExcel" is-config="true" duration-ms="933" started-at="2020-07-16T17:45:51Z" finished-at="2020-07-16T17:45:52Z">
+          <reporter-output>
+            <line>
+              <![CDATA[All Settings are getting ready]]>
+            </line>
+            <line>
+              <![CDATA[Settings done and Tests can be running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUPExcel -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.LoginPageTest@5ba23b66]" name="setUp" is-config="true" duration-ms="8675" started-at="2020-07-16T17:45:52Z" finished-at="2020-07-16T17:46:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Trying to start browser]]>
+            </line>
+            <line>
+              <![CDATA[Browser and Appliction is up and running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginApp()[pri:1, instance:Tests.LoginPageTest@5ba23b66]" name="loginApp" duration-ms="1781" started-at="2020-07-16T17:46:01Z" finished-at="2020-07-16T17:46:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readWebtableData -->
-      </class> <!-- Tests.TC_03_WebTableHandling -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- loginApp -->
+        <test-method status="PASS" signature="getFailedTestSS(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@5ba23b66]" name="getFailedTestSS" is-config="true" duration-ms="880" started-at="2020-07-16T17:46:03Z" finished-at="2020-07-16T17:46:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginPageTest.loginApp()[pri:1, instance:Tests.LoginPageTest@5ba23b66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to End]]>
+            </line>
+            <line>
+              <![CDATA[Test Comoleted and Reports generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getFailedTestSS -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Tests.LoginPageTest@5ba23b66]" name="closeBrowser" is-config="true" duration-ms="784" started-at="2020-07-16T17:46:04Z" finished-at="2020-07-16T17:46:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Tests.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
